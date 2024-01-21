@@ -44,6 +44,7 @@ SECURE_REFERRER_POLICY = 'strict-origin'
 ALLOWED_HOSTS = [
     'www.yeika-beautyart.com',
     'yeika-beautyart.com',
+    'yeikabeatyart-21ad76ba9c53.herokuapp.com',
     '127.0.0.1'
 ]
 

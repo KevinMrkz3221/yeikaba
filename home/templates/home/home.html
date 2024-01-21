@@ -414,7 +414,7 @@
             <h4>{{ project.title }}</h4>
             <p> {{ project.description }}</p>
             <div class="portfolio-links">
-              <a href="{{project.image.url}}" data-gallery="portfolioGallery"
+              <a href="{{ project.image.url }}" data-gallery="portfolioGallery"
                 class="portfolio-lightbox" title="{{ project.title }}"><i class="bi bi-eye"></i></a>
               <a href="{% url 'work' pk=project.id %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                 class="portfolio-details-lightbox" title="Portfolio Details"><i class="bi bi-paperclip"></i></a>

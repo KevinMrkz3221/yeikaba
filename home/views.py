@@ -1,6 +1,6 @@
 from typing import Any
 from django.shortcuts import render
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, DetailView
 
 from .models import Service, Project
 
@@ -16,3 +16,8 @@ class HomeView(TemplateView):
 
 
         return context
+
+
+class WorkDetailView(DetailView):
+    template_name = 'home/portfolio-details.html'
+    model = Project

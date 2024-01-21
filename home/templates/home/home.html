@@ -416,7 +416,7 @@
             <div class="portfolio-links">
               <a href="{{project.image.url}}" data-gallery="portfolioGallery"
                 class="portfolio-lightbox" title="{{ project.title }}"><i class="bi bi-eye"></i></a>
-              <a href="portfolio-details.html" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+              <a href="{% url 'work' pk=project.id %}" data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
                 class="portfolio-details-lightbox" title="Portfolio Details"><i class="bi bi-paperclip"></i></a>
             </div>
           </div>
@@ -439,6 +439,8 @@
   <!-- Licensing information: https://bootstrapmade.com/license/ -->
   <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
   Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+  <a href="{% url 'work' pk=1 %}">test</a>
+
 </div>
 
 <!-- Vendor JS Files -->
@@ -452,6 +454,5 @@
 
 <!-- Template Main JS File -->
 <script src="{% static 'assets/js/main.js' %}"></script>
-
 
 {% endblock %}

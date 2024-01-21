@@ -33,3 +33,6 @@ class Project(models.Model):
 class ProjectImages(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
     image = models.ImageField(upload_to='static/images/projects/', blank=True, null=True)
+
+    def __str__(self) -> str:
+        return self.project.title
